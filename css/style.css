@@ -18,6 +18,21 @@ header h1 {
   margin: 0;
 }
 
+
+header ul {
+  list-style: none;
+  padding: 0;
+}
+
+header ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
 .menu-category {
   display: flex;
   flex-direction: column;
