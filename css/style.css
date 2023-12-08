@@ -7,11 +7,30 @@ body {
   background-color: #f4f4f4;
 }
 
+#scrollToTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #414141;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 1000;
+}
+
 header {
   background: #333;
   color: #fff;
   padding: 1rem 0;
   text-align: center;
+  background-image: url(../img/fondo_encabezado.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 1.5px 0.5px 2px #333;
+  font-size: 30px;
 }
 
 header h1 {
@@ -33,6 +52,14 @@ header a {
   color: #fff;
   text-decoration: none;
 }
+
+figure {
+  display: block;
+  margin: 10px;
+}
+
+
+
 .menu-category {
   display: flex;
   flex-direction: column;
@@ -44,19 +71,26 @@ header a {
   border: 1px solid #ddd;
   margin-bottom: 1rem;
   padding: 1rem;
-  text-align: center;
+  text-align: justify;
+  width: 520px;
+  border-radius: 10px;
 }
 
 .menu-item img {
-  max-width: 100%;
+  padding: 0 auto;
   height: auto;
+  width: 500px;
+  align-items: center;
 }
 
-.price {
+.precio {
   background-color: #e2e2e2;
   padding: 0.5rem;
   border-radius: 5px;
-  display: inline-block;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: fit-content;
 }
 
 footer {
@@ -65,5 +99,3 @@ footer {
   background: #333;
   color: #fff;
 }
-
-/* Agrega tus propias animaciones y transiciones */
