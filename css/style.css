@@ -9,9 +9,9 @@ body {
 
 #scrollToTopButton {
   position: fixed;
-  bottom: 20px;
+  bottom: 100px;
   right: 20px;
-  padding: 10px 15px;
+  padding: 7px 15px;
   font-size: 16px;
   background-color: #414141;
   color: white;
@@ -58,8 +58,6 @@ figure {
   margin: 10px;
 }
 
-
-
 .menu-category {
   display: flex;
   flex-direction: column;
@@ -74,6 +72,7 @@ figure {
   text-align: justify;
   width: 520px;
   border-radius: 10px;
+  background-color: ghostwhite;
 }
 
 .menu-item img {
@@ -81,6 +80,7 @@ figure {
   height: auto;
   width: 500px;
   align-items: center;
+  border-radius: 5px;
 }
 
 .precio {
