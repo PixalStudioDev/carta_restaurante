@@ -20,6 +20,9 @@ body {
   text-decoration: none;
   z-index: 1000;
 }
+#scrollToTopButton:hover {
+  background-color: #565656;
+}
 
 header {
   background: #333;
@@ -29,6 +32,7 @@ header {
   background-image: url(../img/fondo_encabezado.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: -40px;
   text-shadow: 1.5px 0.5px 2px #333;
   font-size: 30px;
 }
