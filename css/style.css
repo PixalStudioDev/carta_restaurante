@@ -20,6 +20,7 @@ body {
   text-decoration: none;
   z-index: 1000;
 }
+
 #scrollToTopButton:hover {
   background-color: #565656;
 }
@@ -57,10 +58,6 @@ header a {
   text-decoration: none;
 }
 
-figure {
-  display: block;
-  margin: 10px;
-}
 
 .menu-category {
   display: flex;
@@ -77,6 +74,11 @@ figure {
   width: 520px;
   border-radius: 10px;
   background-color: ghostwhite;
+}
+
+figure {
+  display: block;
+  margin: 10px;
 }
 
 .menu-item img {
@@ -103,3 +105,4 @@ footer {
   background: #333;
   color: #fff;
 }
+
