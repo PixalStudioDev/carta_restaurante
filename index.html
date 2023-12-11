@@ -5,15 +5,11 @@
   <meta charset="UTF-8">
   <title>Carta del Restaurante</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@100;200;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@100;200;400&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <a id="inicio_pagina"></a>
-  <a href="#inicio_pagina" id="subida" aria-label="Subir" title="Volver al inicio">
-    &#8679;
-  </a>
-
   <header>
     <h1>Restaurante Gourmet</h1>
     <nav>
@@ -27,6 +23,10 @@
   </header>
 
   <main>
+    <a id="inicio_pagina"></a>
+    <a href="#inicio_pagina" id="subida" aria-label="Subir" title="Volver al inicio">
+      &#8679;
+    </a>
     <section class="flotante">
       <a href="#contacto">Reservas y Contacto</a>
     </section>
@@ -125,7 +125,8 @@
           <img src="img/segundo1.png" alt="Plato combinado">
           <figcaption>
             <h3>Cordero mío</h3>
-            <p>Paletilla de cordero lechal cocinado en horno de leña, con madera de encina, sutilmente sazonado con especias provenzales y romero.</p>
+            <p>Paletilla de cordero lechal cocinado en horno de leña, con madera de encina, sutilmente sazonado con
+              especias provenzales y romero.</p>
             <p class="precio">10€</p>
           </figcaption>
         </figure>
@@ -135,7 +136,8 @@
           <img src="img/segundo2.png" alt="Plato combinado">
           <figcaption>
             <h3>Muuuu cha carne</h3>
-            <p>Solomillo al queso de Tresviso, una fórmula a base de queso azul que se elabora en la zona con leche de diferentes especies y razas.</p>
+            <p>Solomillo al queso de Tresviso, una fórmula a base de queso azul que se elabora en la zona con leche de
+              diferentes especies y razas.</p>
             <p class="precio">10€</p>
           </figcaption>
         </figure>
@@ -145,7 +147,8 @@
           <img src="img/segundo3.png" alt="Plato combinado">
           <figcaption>
             <h3>El Bacalao Tomás</h3>
-            <p>Cocinado a plancha a baja temperatura, acompañado de verduras de temporada pochadas a fuego lento, con salsa de cítricos y cilantro.</p>
+            <p>Cocinado a plancha a baja temperatura, acompañado de verduras de temporada pochadas a fuego lento, con
+              salsa de cítricos y cilantro.</p>
             <p class="precio">10€</p>
           </figcaption>
         </figure>
@@ -189,42 +192,43 @@
 
   <footer>
     <section id="contacto" class="contenedor-contacto">
-        <div class="formulario-reservas">
-            <h2>Reserva tu Mesa</h2>
-            <form action="enviar-reserva.php" method="post">
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+      <div class="formulario-reservas">
+        <h2>Reserva tu Mesa</h2>
+        <form action="enviar-reserva.php" method="post">
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
 
-                <input type="email" id="email" name="email" placeholder="email" required>
+          <input type="email" id="email" name="email" placeholder="email" required>
 
-                <input type="tel" id="telefono" name="telefono" placeholder="Telefono" required>
+          <input type="tel" id="telefono" name="telefono" placeholder="Telefono" required>
 
-                <label for="hora">Fecha de reserva</label>
-                <input type="date" id="fecha" name="fecha" placeholder="Fecha Reserva" required>
+          <label for="hora">Fecha de reserva</label>
+          <input type="date" id="fecha" name="fecha" placeholder="Fecha Reserva" required>
 
-                <label for="hora">Hora:</label>
-                <input type="time" id="hora" name="hora" placeholder="Hora de reserva">
+          <label for="hora">Hora:</label>
+          <input type="time" id="hora" name="hora" placeholder="Hora de reserva">
 
-                <label for="personas">Número de personas:</label>
-                <input type="number" id="personas" name="personas" required min="1">
+          <label for="personas">Número de personas:</label>
+          <input type="number" id="personas" name="personas" required min="1">
 
-                <label for="comentarios">Comentarios adicionales:</label>
-                <textarea id="comentarios" name="comentarios"></textarea>
+          <label for="comentarios">Comentarios adicionales:</label>
+          <textarea id="comentarios" name="comentarios"></textarea>
 
-                <input type="submit" value="Reservar">
-            </form>
-        </div>
-        
-        <div class="datos-contacto">
-            <h2>Contacto</h2>
-            <p>Dirección: Plaza del Sol - Madrid</p>
-            <p>Teléfono: +34 666 666 666</p>
-            <p>Email: contacto@restaurantegourmet.com</p>
-            <p>Horario: Lunes a Domingo - 13:00 a 23:00</p>
-            <figure>
-              <img src="img/mapa.png" alt="Mapa de localización">
-            </figure>
-        </div>
+          <input type="submit" value="Reservar">
+        </form>
+      </div>
+
+      <div class="datos-contacto">
+        <h2>Contacto</h2>
+        <p>Dirección: Plaza del Sol - Madrid</p>
+        <p>Teléfono: +34 666 666 666</p>
+        <p>Email: contacto@restaurantegourmet.com</p>
+        <p>Horario: Lunes a Domingo - 13:00 a 23:00</p>
+        <figure>
+          <img src="img/mapa.png" alt="Mapa de localización">
+        </figure>
+      </div>
     </section>
   </footer>
 </body>
+
 </html>
