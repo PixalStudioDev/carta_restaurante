@@ -1,5 +1,5 @@
-html, body {
-/*   font-family: 'Arial', sans-serif; */
+html,
+body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -120,13 +120,19 @@ footer {
 }
 
 footer h2 {
-  font-family: "Audiowide",'Arial', sans-serif;
+  font-family: "Audiowide", 'Arial', sans-serif;
 }
-.formulario-reservas h2, .datos-contacto h2 {
+
+.formulario-reservas h2,
+.datos-contacto h2 {
   color: #333;
 }
 
-.formulario-reservas h2, .datos-contacto h2, label, input, textarea {
+.formulario-reservas h2,
+.datos-contacto h2,
+label,
+input,
+textarea {
   color: #333;
 }
 
@@ -142,20 +148,20 @@ input[type="date"],
 input[type="time"],
 input[type="number"],
 textarea {
-  width: calc(100% - 20px); /* 100% del contenedor menos el padding */
+  width: calc(100% - 20px);
   padding: 10px;
   margin-top: 5px;
-  margin-bottom: 10px; /* Añade un margen debajo de cada campo */
+  margin-bottom: 10px;
   border-radius: 5px;
   border: 1px solid #ddd;
 }
 
 input[type="submit"] {
-  width: auto; /* Permite que el botón tenga el ancho necesario */
+  width: auto;
   padding: 10px 20px;
-  margin-top: 10px; /* Añade un margen en la parte superior del botón */
+  margin-top: 10px;
   border: 1px solid #737373;
-  border-radius: 5px  ;
+  border-radius: 5px;
   padding: 15px 25px 15px 25px;
   font-size: 17px;
   font-weight: bold;
@@ -167,33 +173,31 @@ input[type="submit"]:hover {
 
 #contacto {
   display: flex;
-  flex-direction: row; /* Asegura que los elementos estén en fila */
-  justify-content: space-around; /* Distribuye el espacio entre los elementos */
-  align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
   padding: 20px;
   background: #333;
   color: #fff;
-  margin: 0 auto; /* Asegura un margen automático para centrar */
-  width: 80%; /* Ajusta el ancho del contenedor de contacto */
-  max-width: 1200px; /* Establece un ancho máximo */
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
   font-family: "Arail", sans-serif;
 }
 
 
 .contenedor-contacto {
   display: flex;
-  justify-content: space-between; /* Esto separará ambos contenedores */
+  justify-content: space-between;
   align-items: flex-start;
   padding: 20px;
   background: #333;
   color: #fff;
 }
 
-.datos-contacto
-{
+.datos-contacto {
   align-self: baseline;
   width: 60%;
-/*   margin-top: 20px; */
 }
 
 .datos-contacto h2 {
@@ -213,11 +217,11 @@ input[type="submit"]:hover {
   color: black;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  width: 68%; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 68%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;
   margin-right: 10px;
 }
 
@@ -225,7 +229,30 @@ input[type="submit"]:hover {
   color: #333;
 }
 
-.contacto from{
+.contacto from {
   position: relative;
-    top: -20px;
+  top: -20px;
+}
+
+.flotante {
+  position: fixed;
+  display: flex;
+  top: 105px;
+  right: 20px;
+  font-size: 16px;
+  background-color: #4a4a4a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  z-index: 1000;
+  justify-content: center;
+  width: 110px;
+}
+
+.flotante a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  width: 75%;
+  text-align: -webkit-center;
 }
