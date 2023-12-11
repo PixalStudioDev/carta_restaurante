@@ -1,10 +1,11 @@
-body {
+html, body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   color: #333;
   background-color: #f4f4f4;
+  scroll-behavior: smooth;
 }
 
 #subida {
@@ -28,7 +29,7 @@ body {
 header {
   background: #333;
   color: #fff;
-  padding: 1rem 0;
+  padding: 20px 0;
   text-align: center;
   background-image: url(../img/fondo_encabezado.png);
   background-repeat: no-repeat;
@@ -65,14 +66,22 @@ header a {
   margin: 20px;
 }
 
+#contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px 0px 0px 0px;
+}
+
 .menu-item {
   border: 1px solid #ddd;
-  margin-bottom: 1rem;
-  padding: 1rem;
+  margin-bottom: 40px;
+  padding: 20px;
   text-align: justify;
   width: 520px;
   border-radius: 10px;
   background-color: ghostwhite;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 figure {
@@ -90,7 +99,7 @@ figure {
 
 .precio {
   background-color: #e2e2e2;
-  padding: 0.5rem;
+  padding: 7px;
   border-radius: 5px;
   display: block;
   text-align: center;
@@ -101,7 +110,116 @@ figure {
 
 footer {
   text-align: center;
-  padding: 1rem 0;
+  padding: 20px 0;
   background: #333;
   color: #fff;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+
+.formulario-reservas h2, .datos-contacto h2 {
+  color: #333;
+}
+
+.formulario-reservas h2, .datos-contacto h2, label, input, textarea {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+textarea {
+  width: calc(100% - 20px); /* 100% del contenedor menos el padding */
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px; /* Añade un margen debajo de cada campo */
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+input[type="submit"] {
+  width: auto; /* Permite que el botón tenga el ancho necesario */
+  padding: 10px 20px;
+  margin-top: 10px; /* Añade un margen en la parte superior del botón */
+}
+
+input[type="submit"]:hover {
+  background-color: #565656;
+}
+
+#contacto {
+  display: flex;
+  flex-direction: row; /* Asegura que los elementos estén en fila */
+  justify-content: space-around; /* Distribuye el espacio entre los elementos */
+  align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+  padding: 20px;
+  background: #333;
+  color: #fff;
+  margin: 0 auto; /* Asegura un margen automático para centrar */
+  width: 80%; /* Ajusta el ancho del contenedor de contacto */
+  max-width: 1200px; /* Establece un ancho máximo */
+}
+
+
+.contenedor-contacto {
+  display: flex;
+  justify-content: space-between; /* Esto separará ambos contenedores */
+  align-items: flex-start;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+}
+
+.datos-contacto
+{
+  align-self: baseline;
+  width: 60%;
+  margin-top: 20px;
+}
+
+.datos-contacto h2 {
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+.datos-contacto img {
+  width: 90%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.formulario-reservas {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  width: 68%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  margin-right: 10px;
+}
+
+.formulario-reservas h2 {
+  color: #333;
+}
+
+from{
+  position: relative;
+    top: -20px;
 }
